@@ -3,8 +3,9 @@
 #Autor: Óscar Fernández Orellana
 
 date=$(date)
+user=$(whoami)
 if [ -n "$1" ]; then
 	echo "Hello $1! it's $date"
 else
-	echo "Hello World! it's $date"
+	echo "Hello $user! it's $date"
 fi
